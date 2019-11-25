@@ -1,0 +1,8 @@
+<h1> MY FORM for edit post </h1>
+<%= form_for @school_class do |p| %>
+<label>school title:</label><br>
+ <%= p.text_field :title %><br>
+   <label>school room number:</label><br>
+ <%= p.text_field :room_number %><br>
+ <%= p.submit "Update School class" %>
+ <% end %>

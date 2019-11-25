@@ -1,0 +1,9 @@
+<h1> MY FORM for edit post </h1>
+<%= form_for @student do |p| %>
+<label>student first name:</label><br>
+ <%= p.text_field :first_name %><br>
+   <label>student last name:</label><br>
+ <%= p.text_field :last_name 
+ %><br>
+ <%= p.submit "Update Student" %>
+ <% end %>

@@ -11,15 +11,16 @@ class SchoolClassesController < ApplicationController
 		@school_class = SchoolClass.new
 	end
 
+    def edit
+        @school_class = SchoolClass.find(params[:id])
+    end
+
+
     def create
         # @school_class = SchoolClass.new(school_class_params)
         # @school_class.save
         @school_class= SchoolClass.create(school_class_params)
         redirect_to school_class_path(@school_class)
-    end
-
-    def edit
-        @school_class = SchoolClass.find(params[:id])
     end
 
     def update
